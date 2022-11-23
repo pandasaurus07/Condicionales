@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación 1</title>
+</head>
+<body>
+    <script>
+        function Verestado(){
+            var temp= parseInt (document.getElementById("temperaturaid").value);
+            if(temp<=0){
+                alert ("Hielo")  
+            }else{
+                if(temp<100){
+                    alert ("Líqido")
+                }else{
+                    if(temp>=100)
+                    alert("Vapor")
+                }
+            }
+        }
+    </script>
+    Temperatura:<input type="text" id="temperaturaid"><br>
+    <input type="button" onclick="Verestado()">
+</body>
+</html>
