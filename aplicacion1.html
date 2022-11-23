@@ -7,6 +7,15 @@
     <title>Aplicación 1</title>
 </head>
 <body>
+    <h1>Temperatura</h1>
+    <style>
+        h1{
+            background-color:brown
+        }
+        body{
+            background-color:antiquewhite
+        }
+    </style>
     <script>
         function Verestado(){
             var temp= parseInt (document.getElementById("temperaturaid").value);
@@ -14,7 +23,7 @@
                 alert ("Hielo")  
             }else{
                 if(temp<100){
-                    alert ("Líqido")
+                    alert ("Líquido")
                 }else{
                     if(temp>=100)
                     alert("Vapor")
@@ -22,7 +31,7 @@
             }
         }
     </script>
-    Temperatura:<input type="text" id="temperaturaid"><br>
-    <input type="button" onclick="Verestado()">
+    <input type="text" id="temperaturaid"><br>
+    <input type="button"  value = "Ver estado" onclick="Verestado()">
 </body>
 </html>
