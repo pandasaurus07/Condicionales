@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación 3</title>
+</head>
+<body>
+    <script>
+        function Leer(){
+            //alert("hola")
+            var edadmia = document.getElementById("edadmia").value;
+            var edadamigo = document.getElementById("edadamigo").value;
+            if(edadmia<edadamigo){
+                //alert("tu amigo es mayor")
+                document.getElementById("mensaje").innerHTML="<h1>tu amigo es mayor</h1>"
+                document.getElementById("mensaje").innerHTML="<h1>tu eres  mayor</h1>"
+            }else{
+                alert("tú eres mayor")
+            }
+
+        }
+    </script>
+    Edad mia:<input type="text" id="edadmia"><br>
+    Edad de amigo:<input type="text" id="edadamigo"><br>
+    <input type="button" value="¿Quién es mayor?" onclick="Leer()">
+    <div id="mensaje"></div>
+</body>
+</html>
