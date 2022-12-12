@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APLICACIÓN 4</title>
+</head>
+<body>
+     <title>Div Tags</title>
+     <style>
+        #capa1{left:20px;top:40px;background-color:green;}
+        #capa2{background-color:orange}.caja{width:100px; height:100px;}
+     </style>
+     <script>
+        function Dice(mensaje){alert(mensaje);}
+     </script>
+     <div id="contenedor">
+        <div onclick="Dice('Soy Verde');" id="capa1" class="caja">V</div>
+        <div onclick="Dice('Soy Naranja')" id="capa2" class="caja">N</div>
+                      
+    </div>
+</body>
+</html>
